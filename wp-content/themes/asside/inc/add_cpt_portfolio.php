@@ -39,4 +39,12 @@ function hetic_add_portfolio_cpt()
 
     register_post_type($post_type, $args );
 
+    $taxonomy = "thematique";
+    $object_type = array("portfolio");
+    $taxonomy_args = array(
+          'label' => 'Thématique',
+          'rewrite' => array( 'slug' => 'thematique-portfolio' ),
+          'hierarchical' => true,
+    );
+    register_taxonomy( $taxonomy, $object_type, $taxonomy_args );
 }

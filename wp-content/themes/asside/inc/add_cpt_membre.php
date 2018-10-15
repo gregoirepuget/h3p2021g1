@@ -39,4 +39,13 @@ function hetic_add_member_cpt()
 
     register_post_type($post_type, $args );
 
+    $taxonomy = "profil";
+    $object_type = array("membre");
+    $taxonomy_args = array(
+          'label' => 'Profil',
+          'rewrite' => array( 'slug' => 'profil-membre' ),
+          'hierarchical' => false,
+    );
+    register_taxonomy( $taxonomy, $object_type, $taxonomy_args );
+
 }
