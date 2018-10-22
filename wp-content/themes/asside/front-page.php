@@ -20,7 +20,7 @@
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
           <?php the_post_thumbnail('portfolio-thumb', array(
             "class" => "card-img-top probootstrap-animate",
-            "alt"   => get_the_title()
+            "alt"   => get_the_title(),
           ) ); ?>
           <!--<img class="card-img-top probootstrap-animate" src="images/img_1.jpg" alt="Card image cap">-->
           </a>

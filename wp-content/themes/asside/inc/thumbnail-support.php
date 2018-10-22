@@ -5,4 +5,5 @@ function thumbnails_theme_support(){
 
     add_image_size( 'page-thumb', 1700, 1133, true );
     add_image_size( 'portfolio-thumb', 600, 99999, false );
+    add_image_size( 'membre-thumb', 700, 467, true );
 }
