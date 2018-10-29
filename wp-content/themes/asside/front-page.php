@@ -44,7 +44,7 @@
 
   </div>
   <div>
-    <a href="#" title="Voir plus" class="readMore">Voir plus</a>
+    <a href="#" title="Voir plus" class="readMore" data-pagination="1">Voir plus</a>
   </div>
 
   <div class="container-fluid d-md-none">
@@ -59,6 +59,8 @@
       </div>
     </div>
   </div>
-
+<script>
+var max_paged = <?php echo $max_page; ?>
+</script>
 </main>
 <?php get_footer(); ?>
