@@ -6,9 +6,10 @@
     <?php
       $args = array(
         'post_type' => 'portfolio',
-        'posts_per_page' => 15,
+        'posts_per_page' => 6,
       );
       $the_query = new WP_Query( $args );
+      $max_page = $the_query->max_num_pages;
 
       if($the_query -> have_posts())
       {
@@ -41,6 +42,9 @@
       </a>
     </div>-->
 
+  </div>
+  <div>
+    <a href="#" title="Voir plus" class="readMore">Voir plus</a>
   </div>
 
   <div class="container-fluid d-md-none">

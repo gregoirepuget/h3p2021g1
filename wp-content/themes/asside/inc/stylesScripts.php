@@ -48,6 +48,10 @@ wp_enqueue_script('imagesloaded.pkgd');
 wp_register_script('main', JS_URL . '/main.js', array(),'1.0', true);
 wp_enqueue_script('main');
 
+wp_register_script('ajaxjs', JS_URL . '/ajax.js', array(jQuery),'1.0', true);
+wp_localize_script('ajaxjs', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
+wp_enqueue_script('ajaxjs');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'ajout_scripts' );
