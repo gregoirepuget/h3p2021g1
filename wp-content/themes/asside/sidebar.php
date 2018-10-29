@@ -7,13 +7,16 @@
   </div>
   <div class="probootstrap-overflow">
     <nav class="probootstrap-nav">
-      <ul>
-        <li class="probootstrap-animate active" data-animate-effect="fadeInLeft"><a href="index.html">Home</a></li>
-        <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="about.html">About</a></li>
-        <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="services.html">Services</a></li>
-        <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="portfolio.html">Portfolio</a></li>
-        <li class="probootstrap-animate" data-animate-effect="fadeInLeft"><a href="contact.html">Contact</a></li>
-      </ul>
+      <?php
+      $args=array(
+          'theme_location' => 'sidebar', // nom du slug
+          'menu' => 'sidebar_fr', // nom à donner cette occurence du menu
+          'menu_class' => 'menu_sidebar', // class à attribuer au menu
+          'menu_id' => 'menu_sidebar' // id à attribuer au menu
+          // voir les autres arguments possibles sur le codex
+          );
+          wp_nav_menu($args);
+      ?>
     </nav>
     <footer class="probootstrap-aside-footer probootstrap-animate" data-animate-effect="fadeInLeft">
       <ul class="list-unstyled d-flex probootstrap-aside-social">
