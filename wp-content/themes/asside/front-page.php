@@ -30,7 +30,7 @@
         }
       }
       else{
-        echo '<p>Pas d\'item dans le portfolio</p>';
+        echo '<p>'.__('No item in portfolio', 'aside').'</p>';
       }
       wp_reset_postdata();
     ?>
@@ -44,7 +44,7 @@
 
   </div>
   <div>
-    <a href="#" title="Voir plus" class="readMore" data-pagination="1">Voir plus</a>
+    <a href="#" title="<?php _e("Read more","aside"); ?>" class="readMore" data-pagination="1"><?php _e("Read more","aside"); ?></a>
   </div>
 
   <div class="container-fluid d-md-none">
@@ -55,7 +55,7 @@
           <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
           <li><a href="#" class="p-2"><span class="icon-dribbble"></span></a></li>
         </ul>
-        <p>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Aside</a>. <br> All Rights Reserved. Designed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></p>
+        <p>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Aside</a>. <br><?php _e(' All Rights Reserved. Designed by <a href="https://uicookies.com/" target="_blank">uicookies.com</a>',"aside"); ?></p>
       </div>
     </div>
   </div>

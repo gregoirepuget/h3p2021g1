@@ -24,6 +24,7 @@
         <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
         <li><a href="#" class="p-2"><span class="icon-dribbble"></span></a></li>
       </ul>
+      <?php pll_the_languages(array('show_flags'=>1,'show_names'=>0)); ?>
       <p>&copy; 2017 <a href="https://uicookies.com/" target="_blank">uiCookies:Aside</a>. <br> All Rights Reserved.</p>
     </footer>
   </div>
